@@ -38,5 +38,7 @@ public class SpringRestApplicationTests {
 		usuarioRepo.save(usuario);
 		assertTrue(usuario.getId() != null);
 	}
+	 
+	System.out.println(" ");
 
 }
