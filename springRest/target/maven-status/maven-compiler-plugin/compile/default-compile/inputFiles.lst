@@ -1,0 +1,12 @@
+/home/java/eclipse-workspace/springRest/src/main/java/br/gov/sp/fatec/service/AutorizacaoServiceImpl.java
+/home/java/eclipse-workspace/springRest/src/main/java/br/gov/sp/fatec/service/UsuarioServiceImpl.java
+/home/java/eclipse-workspace/springRest/src/main/java/br/gov/sp/fatec/SpringRestApplication.java
+/home/java/eclipse-workspace/springRest/src/main/java/br/gov/sp/fatec/web/controller/AutorizacaoController.java
+/home/java/eclipse-workspace/springRest/src/main/java/br/gov/sp/fatec/model/Usuario.java
+/home/java/eclipse-workspace/springRest/src/main/java/br/gov/sp/fatec/repository/AutorizacaoRepository.java
+/home/java/eclipse-workspace/springRest/src/main/java/br/gov/sp/fatec/repository/UsuarioRepository.java
+/home/java/eclipse-workspace/springRest/src/main/java/br/gov/sp/fatec/view/View.java
+/home/java/eclipse-workspace/springRest/src/main/java/br/gov/sp/fatec/web/controller/UsuarioController.java
+/home/java/eclipse-workspace/springRest/src/main/java/br/gov/sp/fatec/model/Autorizacao.java
+/home/java/eclipse-workspace/springRest/src/main/java/br/gov/sp/fatec/service/AutorizacaoService.java
+/home/java/eclipse-workspace/springRest/src/main/java/br/gov/sp/fatec/service/UsuarioService.java
