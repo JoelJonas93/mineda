@@ -13,7 +13,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import br.gov.sp.fatec.view.View;
 
 import com.fasterxml.jackson.annotation.JsonView;
-//teste
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 @Entity
