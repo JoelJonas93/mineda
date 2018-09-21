@@ -1,5 +1,5 @@
 package br.gov.sp.fatec.model;
-
+//bolsonaro
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
