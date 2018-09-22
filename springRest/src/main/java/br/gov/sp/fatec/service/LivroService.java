@@ -15,5 +15,7 @@ public interface LivroService {
 	public List<Livro> buscaLivro();
 	
 	public Livro buscaLivroNome(String nome);
+	
+	public Livro buscaLivroId(Long idLivro);
 
 }
