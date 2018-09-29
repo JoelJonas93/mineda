@@ -10,6 +10,10 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonView;
+
+import br.gov.sp.fatec.view.View;
+
 @Entity
 @Table(name = "bib_biblioteca")
 public class Biblioteca {
@@ -17,12 +21,14 @@ public class Biblioteca {
 	@Id 
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name = "bib_id")
+	@JsonView({View.BibliotecaSemNome.class})
 	private Long id;
 	
     @Column(name = "bib_nome", unique=true, length = 20, nullable = false)
     private String nome;
     
     @OneToMany(mappedBy = "biblioteca" )
+    @JsonView({View.BibliotecaSemNome.class})
     private List<Livro> livros;
     
     

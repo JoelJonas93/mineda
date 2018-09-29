@@ -18,6 +18,9 @@ public interface LivroRepository extends CrudRepository<Livro, Long> {
 
 	@Query("select l from Livro l join l.biblioteca b where  l.nome = ?1")
 	public  Livro buscaLivro(String nome);
+	
+	@Query("select l from Livro l join l.biblioteca b where  b.id = ?1")
+	public  List<Livro> buscaLivroBiblioteca(Long id);
 
 }
 

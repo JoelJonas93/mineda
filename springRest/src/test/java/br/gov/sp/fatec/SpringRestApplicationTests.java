@@ -39,6 +39,6 @@ public class SpringRestApplicationTests {
 		assertTrue(usuario.getId() != null);
 	}
 	 
-	System.out.println(" ");
+	
 
 }

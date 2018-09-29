@@ -5,9 +5,30 @@ package br.gov.sp.fatec.view;
  */
 public class View {
 	
+	public class LivroCompleto {
+
+	}
+
+	public class LivroIdNome {
+
+	}
+
 	/**
 	 * Visualizacao principal com os principais atributos
+	 * 
 	 */
+	public static class BibliotecaSemNome{
+		
+	}
+	
+	public static class LivroSemId{
+		
+	}
+	
+	public static class LivroSemIdAlternativo{
+		
+	}
+	
 	public static class UsuarioResumo {
 	}
 	

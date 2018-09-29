@@ -9,6 +9,10 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonView;
+
+import br.gov.sp.fatec.view.View;
+
 @Entity
 @Table(name= "liv_livro")
 public class Livro {
@@ -16,13 +20,16 @@ public class Livro {
 	@Id 
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name = "liv_id")
+	@JsonView({View.LivroIdNome.class, View.LivroCompleto.class})
 	private Long id;
 	
 	@Column(name = "liv_nome", unique=true, length = 20, nullable = false)
+	@JsonView({View.LivroSemId.class, View.LivroSemIdAlternativo.class, View.LivroIdNome.class, View.LivroCompleto.class})
 	private String nome;
 	
 	@ManyToOne
 	@JoinColumn(name="liv_bib_id",nullable =false)
+	@JsonView({View.LivroCompleto.class})
 	private  Biblioteca biblioteca;
 	
 		
