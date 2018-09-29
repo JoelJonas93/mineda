@@ -4,7 +4,11 @@ package br.gov.sp.fatec.view;
  * Esta classe define as diferentes visualizacoes disponiveis para serializacoes
  */
 public class View {
-	
+
+	public class BibliotecaNome {
+
+	}
+
 	public class LivroCompleto {
 
 	}
@@ -17,28 +21,32 @@ public class View {
 	 * Visualizacao principal com os principais atributos
 	 * 
 	 */
-	public static class BibliotecaSemNome{
-		
+	public static class BibliotecaCompleta {
+
 	}
-	
-	public static class LivroSemId{
-		
+
+	public static class BibliotecaSemNome {
+
 	}
-	
-	public static class LivroSemIdAlternativo{
-		
+
+	public static class LivroSemId {
+
 	}
-	
+
+	public static class LivroSemIdAlternativo {
+
+	}
+
 	public static class UsuarioResumo {
 	}
-	
+
 	/**
-	 * Visualizacao com todos os atributos
-	 * Inclui tudos os atributos marcados com Main
+	 * Visualizacao com todos os atributos Inclui tudos os atributos marcados com
+	 * Main
 	 */
 	public static class UsuarioCompleto extends UsuarioResumo {
 	}
-	
+
 	/**
 	 * Visualizacao alternativa
 	 */

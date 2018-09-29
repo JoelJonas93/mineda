@@ -34,7 +34,7 @@ public class Usuario{
 	private Long id;
     
     @Column(name = "USR_NOME", unique=true, length = 20, nullable = false)
-    @JsonView({View.UsuarioResumo.class, View.UsuarioResumoAlternativo.class})
+    @JsonView({View.UsuarioResumo.class, View.UsuarioResumoAlternativo.class, View.UsuarioCompleto.class})
     private String nome;
     
     @Column(name = "USR_SENHA", length = 50, nullable = false)

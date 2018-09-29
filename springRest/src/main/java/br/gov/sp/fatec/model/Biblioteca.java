@@ -21,14 +21,15 @@ public class Biblioteca {
 	@Id 
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name = "bib_id")
-	@JsonView({View.BibliotecaSemNome.class})
+	@JsonView({View.BibliotecaSemNome.class, View.BibliotecaCompleta.class})
 	private Long id;
 	
     @Column(name = "bib_nome", unique=true, length = 20, nullable = false)
+    @JsonView({View.LivroCompleto.class, View.BibliotecaCompleta.class, View.BibliotecaNome.class})
     private String nome;
     
     @OneToMany(mappedBy = "biblioteca" )
-    @JsonView({View.BibliotecaSemNome.class})
+    @JsonView({View.BibliotecaSemNome.class, View.BibliotecaCompleta.class})
     private List<Livro> livros;
     
     
@@ -56,6 +57,7 @@ public class Biblioteca {
 	public void setLivros(List<Livro> livros) {
 		this.livros = livros;
 	}
+	
     
     
 

@@ -24,7 +24,7 @@ public class Livro {
 	private Long id;
 	
 	@Column(name = "liv_nome", unique=true, length = 20, nullable = false)
-	@JsonView({View.LivroSemId.class, View.LivroSemIdAlternativo.class, View.LivroIdNome.class, View.LivroCompleto.class})
+	@JsonView({View.LivroSemId.class, View.LivroSemIdAlternativo.class, View.LivroIdNome.class, View.LivroCompleto.class, View.BibliotecaCompleta.class})
 	private String nome;
 	
 	@ManyToOne

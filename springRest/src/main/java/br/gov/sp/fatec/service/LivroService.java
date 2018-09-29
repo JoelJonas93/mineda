@@ -19,5 +19,7 @@ public interface LivroService {
 	public Livro buscaLivroId(Long idLivro);
 	
 	public List<Livro> buscaLivroBiblioteca(Long id);
+	
+	public Livro salvarLivro(Livro livro);
 
 }

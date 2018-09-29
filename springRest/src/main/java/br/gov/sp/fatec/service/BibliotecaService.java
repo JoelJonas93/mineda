@@ -3,6 +3,7 @@ package br.gov.sp.fatec.service;
 import java.util.List;
 
 import br.gov.sp.fatec.model.Biblioteca;
+import br.gov.sp.fatec.model.Livro;
 
 public interface BibliotecaService {
 	
@@ -15,5 +16,9 @@ public interface BibliotecaService {
 	public List<Biblioteca> retornaBibliotecas();
 	
 	public void excluirBiblioteca(Long id);
+	
+	public Biblioteca salvarBiblioteca(Biblioteca biblioteca);
+	
+	public Livro adicionaLivoBiblioteca(Livro livro);
 	
 }

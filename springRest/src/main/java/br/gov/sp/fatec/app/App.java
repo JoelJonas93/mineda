@@ -31,8 +31,8 @@ public class App
 		Livro livro = new Livro();
 		Livro livro2 = new Livro();
 		
-		livro = livroService.incluirLivro("Hobbit", "Alexandria");
-		livro2 = livroService.incluirLivro("Marvel", "Messias");
+		livro = livroService.incluirLivro("Hobbitx", "Horusy);
+		livro2 = livroService.incluirLivro("Marvelx", "Messiasx");
 		
 		System.out.println("Livro: " + livro.getNome());
 		System.out.println("Livro: " + livro2.getNome() + "\nBiblioteca: " + livro.getBiblioteca().getNome());

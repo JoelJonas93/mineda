@@ -7,7 +7,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import br.gov.sp.fatec.model.Biblioteca;
+import br.gov.sp.fatec.model.Livro;
 import br.gov.sp.fatec.repository.BibliotecaRepository;
+import br.gov.sp.fatec.repository.LivroRepository;
 
 @Service("bibliotecaService")
 public class BibliotecaServiceImpl implements BibliotecaService {
@@ -15,7 +17,11 @@ public class BibliotecaServiceImpl implements BibliotecaService {
 	@Autowired
 	private BibliotecaRepository bibliotecaRepo;
 	
+	@Autowired
+	private LivroRepository livroR;
 	
+	@Autowired
+	private LivroService livroService;
 
 	
 	/**
@@ -64,6 +70,23 @@ public class BibliotecaServiceImpl implements BibliotecaService {
 	public void excluirBiblioteca(Long id) {
 		
 		bibliotecaRepo.deleteById(id);;
+	}
+
+	@Override
+	public Biblioteca salvarBiblioteca(Biblioteca biblioteca) {
+		bibliotecaRepo.save(biblioteca);
+		for(Livro liv: biblioteca.getLivros()) {
+			livroService.incluirLivro(liv.getNome(), biblioteca.getNome());
+		}
+		return biblioteca;
+	}
+
+	@Override
+	public Livro adicionaLivoBiblioteca(Livro livro) {
+		if(livroR.findByNome(livro.getNome()) == null) {
+			livroR.save(livro);
+		}
+		return livro;
 	}
 
 }
