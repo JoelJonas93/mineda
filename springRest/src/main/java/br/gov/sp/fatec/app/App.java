@@ -26,20 +26,19 @@ public class App
 //		System.out.println("Biblioteca: " + biblioteca.getNome());
 //		System.out.println("Biblioteca: " + biblioteca2.getNome());
 		
-		LivroService livroService = (LivroService)context.getBean("livroService");
+//		LivroService livroService = (LivroService)context.getBean("livroService");
+//		
+//		Livro livro = new Livro();
+//		Livro livro2 = new Livro();
 		
-		Livro livro = new Livro();
-		Livro livro2 = new Livro();
+//		livro2 = livroService.incluirLivro("Marvelx", "Messiasx");
 		
-		livro = livroService.incluirLivro("Hobbitx", "Horusy);
-		livro2 = livroService.incluirLivro("Marvelx", "Messiasx");
-		
-		System.out.println("Livro: " + livro.getNome());
-		System.out.println("Livro: " + livro2.getNome() + "\nBiblioteca: " + livro.getBiblioteca().getNome());
-		
-		System.out.println(livroService.retornaLivros().size());
-		
-		System.out.println(bibliotecaService.buscaId(23l).getNome());
+//		System.out.println("Livro: " + livro.getNome());
+//		System.out.println("Livro: " + livro2.getNome() + "\nBiblioteca: " + livro.getBiblioteca().getNome());
+//		
+//		System.out.println(livroService.retornaLivros().size());
+//		
+//		System.out.println(bibliotecaService.buscaId(23l).getNome());
 		
 		context.close();
 
